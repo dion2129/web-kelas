@@ -22,7 +22,7 @@
         </div>
     </div>
     <div class="footer-bottom">
-        <p><strong>Copyright @ 2025 ASTRANTIA</strong>. All Right Reserved</p>
+        <p><strong>Copyright &copy; 2025 ASTRANTIA</strong>. All Right Reserved</p>
         <p>Designed by group 9</p>
     </div>
 </footer>
