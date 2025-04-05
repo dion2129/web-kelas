@@ -1,28 +1,18 @@
-<footer>
-    <div class="footer-container">
-        <div class="footer-section">
-            <h3>SI 23 UNTAD</h3>
-            <p>Tondo, Kec. Mantikulore, Kota Palu<br> Sulawesi Tengah 94148</p>
-            <p>Email : lorem@gmail.com</p>
+<footer class="bg-light text-center text-muted py-4 mt-5 border-top">
+    <div class="container">
+        <h5 class="fw-bold">SI 23 UNTAD</h5>
+        <p class="mb-1">Tondo, Kec. Mantikulore, Kota Palu, Sulawesi Tengah 94148</p>
+        <p class="mb-3">Email: lorem@gmail.com</p>
+
+        <div class="d-flex justify-content-center flex-wrap gap-3 mb-3">
+            <a href="#" class="text-muted text-decoration-none">Home</a>
+            <a href="#" class="text-muted text-decoration-none">Tugas</a>
+            <a href="#" class="text-muted text-decoration-none">Jadwal</a>
+            <a href="#" class="text-muted text-decoration-none">Anggota</a>
+            <a href="#" class="text-muted text-decoration-none">Gallery</a>
         </div>
-        <div class="footer-section">
-            <h3>LINK PAGES</h3>
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">TUGAS</a></li>
-                <li><a href="#">JADWAL</a></li>
-                <li><a href="#">ANGGOTA</a></li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h3>SERVICE</h3>
-            <ul>
-                <li><a href="#">GALLERY</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p><strong>Copyright &copy; 2025 ASTRANTIA</strong>. All Right Reserved</p>
-        <p>Designed by group 9</p>
+
+        <small class="d-block">&copy; 2025 <strong>Astrantia</strong>. All Rights Reserved.</small>
+        <small>Designed by Group 9</small>
     </div>
 </footer>
