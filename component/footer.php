@@ -1,4 +1,4 @@
-<footer class="bg-light text-center text-muted py-4 mt-5 border-top">
+<footer class="bg-body-secondary text-center text-muted py-4 mt-5 border-top">
     <div class="container">
         <h5 class="fw-bold">SI 23 UNTAD</h5>
         <p class="mb-1">Tondo, Kec. Mantikulore, Kota Palu, Sulawesi Tengah 94148</p>

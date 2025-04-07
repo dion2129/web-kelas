@@ -1,46 +1,49 @@
         <!DOCTYPE html>
         <html lang="en">
+
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Document</title>
-            <link rel="stylesheet" href="../css/style_nav.css">
+            <link rel="stylesheet" href="../css/style_nav1.css">
             <link rel="stylesheet" href="../css/style_footer1.css">
             <link rel="stylesheet" href="../css/style_index.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-            <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"></head>
+            <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+        </head>
 
         </head>
+
         <body>
-            <?php 
-            include "../component/nav.php" ;
+            <?php
+            include "../component/nav.php";
             ?>
             <header class="carousel slide" data-bs-ride="carousel">
-            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="3000">
-                    <img src="../assets/img/hero01.jpg" alt="hero 1" class="d-block w-100">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img src="../assets/img/hero01.jpg" alt="hero 1" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="../assets/img/hero02.jpg" alt="hero 2" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/img/hero3.jpg" alt="hero 3" class="d-block w-100">
+                        </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                    <img src="../assets/img/hero02.jpg" alt="hero 2"class="d-block w-100">
-                    </div>
-                    <div class="carousel-item">
-                    <img src="../assets/img/hero3.jpg" alt="hero 3"class="d-block w-100">
-                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
                 <h1 class="text-hero">ASTRANTIA</h1>
             </header>
 
-            <main class="container" >
+            <main class="container">
                 <h2>FILOSOFI</h2>
                 <div class="filos">
                     <img src="../assets/img/astrantia.jpg" alt="" class="img-fluid">
@@ -57,5 +60,5 @@
             <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
         </body>
-        </html>
 
+        </html>

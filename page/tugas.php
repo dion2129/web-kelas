@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Daftar Tugas</title>
-    <link rel="stylesheet" href="../css/style_nav.css">
+    <link rel="stylesheet" href="../css/style_nav1.css">
     <link rel="stylesheet" href="../css/style_footer1.css">
     <link rel="stylesheet" href="../css/style_index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -37,6 +37,21 @@
                             <td>Struktur Data</td>
                             <td>Membuat linked list dengan operasi insert dan delete</td>
                             <td>10 Juni 2025</td>
+                        </tr>
+                        <tr>
+                            <td>Basis Data</td>
+                            <td>Desain ERD untuk sistem perpustakaan</td>
+                            <td>12 Juni 2025</td>
+                        </tr>
+                        <tr>
+                            <td>Basis Data</td>
+                            <td>Desain ERD untuk sistem perpustakaan</td>
+                            <td>12 Juni 2025</td>
+                        </tr>
+                        <tr>
+                            <td>Basis Data</td>
+                            <td>Desain ERD untuk sistem perpustakaan</td>
+                            <td>12 Juni 2025</td>
                         </tr>
                         <tr>
                             <td>Basis Data</td>
