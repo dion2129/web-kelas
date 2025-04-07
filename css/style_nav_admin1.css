@@ -1,0 +1,103 @@
+
+/* Sidebar */
+.sidebar {
+    z-index: 10000;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 60px;
+    height: 60px;
+    background-color: #6366f1;
+    border-radius: 40px;
+    padding: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar.Open {
+    height: 31rem;
+    /* width: 200px; */
+    border-radius: 40px;
+}
+.sidebar.Open:hover {
+    height: 31rem;
+    width: 200px;
+    border-radius: 30px 40px 40px 30px;
+}
+
+/* .sidebar.Open .logo{
+    transform: translateX(-65px);
+} */
+.sidebar.Open:hover .logo{
+    transform: translateX(-70px);
+    
+}
+/* Logo */
+.logo {
+    width: 50px;
+    margin-top: -5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+/* .logo:hover {
+    transform: scale(1.1);
+} */
+
+/* Menu Container */
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    width: 100%;
+    
+}
+
+/* Menu Item */
+.warp-menu {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.warp-menu:hover {
+    background-color: #818cf8;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+    margin-left: 4px;
+    width: 18px;
+    height: 30px;
+    color: white;
+    transform: translateX(-4px);
+}
+
+
+.menu-item i {
+    font-size: 24px;
+}
+
+/* Text */
+.warp-menu span {
+    color: white;
+    display: none;
+    white-space: nowrap;
+}
+
+/* Tampilkan teks hanya jika sidebar terbuka */
+.sidebar.Open .warp-menu span {
+    display: block;
+}
