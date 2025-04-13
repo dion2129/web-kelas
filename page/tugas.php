@@ -21,7 +21,7 @@ include "../config/db.php";
     <?php include "../component/nav.php"; ?>
 
     <div class="container py-5">
-        <h2 class="text-center mb-4 fw-bold">📝 Daftar Tugas Perkuliahan</h2>
+        <h2 class="text-center mb-4 fw-bold">Daftar Tugas Perkuliahan</h2>
 
         <!-- Tabel Tugas -->
         <div class="card mb-4 shadow-sm">

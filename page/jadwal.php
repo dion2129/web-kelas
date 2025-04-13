@@ -21,7 +21,7 @@ include "../config/db.php";
 
     <div class="container py-5">
         <div class="text-center mb-4">
-            <h2 class="fw-bold">📅 Jadwal Perkuliahan</h2>
+            <h2 class="fw-bold">Jadwal Perkuliahan</h2>
         </div>
 
         <div class="table-responsive">
