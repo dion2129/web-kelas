@@ -6,14 +6,16 @@ if (isset($_POST['tambah_jadwal'])) {
     $kode = $_POST['kode_matkul'];
     $hari = $_POST['hari'];
     $jam = $_POST['jam'];
-    $con->query("INSERT INTO jadwal (kode_matkul, hari, jam) VALUES ('$kode', '$hari', '$jam')");
+    $ruangan = $_POST['ruangan'];
+    $con->query("INSERT INTO jadwal (kode_matkul, hari, jam, ruangan) VALUES ('$kode', '$hari', '$jam', '$ruangan')");
 }
 if (isset($_POST['edit_jadwal'])) {
     $id = $_POST['id_jadwal'];
     $kode = $_POST['kode_matkul'];
     $hari = $_POST['hari'];
     $jam = $_POST['jam'];
-    $con->query("UPDATE jadwal SET kode_matkul='$kode', hari='$hari', jam='$jam' WHERE id_jadwal=$id");
+    $ruangan = $_POST['ruangan'];
+    $con->query("UPDATE jadwal SET kode_matkul='$kode', hari='$hari', jam='$jam', ruangan='$ruangan' WHERE id_jadwal=$id");
 }
 
 
@@ -45,7 +47,7 @@ if (isset($_GET['hapus'])) {
 
     <form method="post" class="mb-4">
         <div class="row g-2">
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <select name="kode_matkul" class="form-select" required>
                     <option disabled selected>Pilih Kode Matkul</option>
                     <?php
@@ -71,7 +73,10 @@ if (isset($_GET['hapus'])) {
             <div class="col-md-3">
                 <input type="time" name="jam" class="form-control" required>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-2">
+                <input type="text" name="ruangan" class="form-control" placeholder="Ruangan" maxlength="2" required>
+            </div>
+            <div class="col-md-2">
                 <button type="submit" name="tambah_jadwal" class="btn btn-primary w-100">Tambah Jadwal</button>
             </div>
         </div>
@@ -83,6 +88,7 @@ if (isset($_GET['hapus'])) {
                 <th>Kode Matkul</th>
                 <th>Hari</th>
                 <th>Jam</th>
+                <th>Ruangan</th>
                 <th>Aksi</th>
             </tr>
         </thead>
@@ -94,6 +100,7 @@ if (isset($_GET['hapus'])) {
                     <td>{$row['kode_matkul']}</td>
                     <td>{$row['hari']}</td>
                     <td>{$row['jam']}</td>
+                    <td>{$row['ruangan']}</td>
                     <td><a href='?hapus={$row['id_jadwal']}' class='btn btn-danger btn-sm' onclick=\"return confirm('Yakin ingin menghapus?');\">Hapus</a>
                     <a href='#' class='btn btn-success btn-sm' data-bs-toggle='modal' data-bs-target='#editModal{$row['id_jadwal']}'>Edit</a></td></tr>";
             }
@@ -105,7 +112,7 @@ if (isset($_GET['hapus'])) {
     while ($row = $data->fetch_assoc()) {
         $id = $row['id_jadwal'];
     ?>
-      
+
         <div class="modal fade" id="editModal<?= $id ?>" tabindex="-1" aria-labelledby="editModalLabel<?= $id ?>" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -144,6 +151,7 @@ if (isset($_GET['hapus'])) {
                                 <label>Jam</label>
                                 <input type="time" name="jam" class="form-control" value="<?= $row['jam'] ?>" required>
                             </div>
+
                         </div>
                         <div class="modal-footer">
                             <button type="submit" name="edit_jadwal" class="btn btn-primary">Simpan Perubahan</button>
